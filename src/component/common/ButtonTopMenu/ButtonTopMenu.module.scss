@@ -1,25 +1,2 @@
 @import '../../../styles/global.scss';
 
-a {
-  display: inline-block;
-  width: 164px;
-  height: 14px;
-  padding: 2px 0;
-  margin-top: 10px;
-  background-color: $light-bronze;
-  border-radius: 30px 10px 20px;
-  box-shadow: 1px 1px 10px 1px black;
-  font-size: 12px;
-  font-weight: bolder;
-  transition: all 0.3s ease 0.04s;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  &:hover {
-    background-color: $green;
-  }
-}
-
-.active{
-  background-color: $white;
-}

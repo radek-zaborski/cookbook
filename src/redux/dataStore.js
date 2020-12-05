@@ -35,7 +35,7 @@ const categoryRecipes = [
         id: '3',
         title:'zupa 3',
         image: '',
-        description: '',
+        description: 'zdjecie potrawy',
         localAdress:'432234',
         recipe: {
           ingredients: [
