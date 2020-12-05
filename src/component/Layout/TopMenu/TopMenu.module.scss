@@ -1,0 +1,20 @@
+@import '../../../styles/global.scss';
+
+.component {
+  
+  width: 180px;
+  height: auto;
+  
+  position: absolute;
+  top: 5px;
+  right: 10px;
+
+
+  a:last-child{
+    margin-top: 30px;
+  }  
+
+  .active {
+    background-color: $white;
+  }
+}

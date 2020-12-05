@@ -1,0 +1,18 @@
+@import '../../../styles/global.scss';
+
+.component {
+  margin-top: 10px;
+  height: 240px;
+  width: 100%;
+
+  background: url('../../../images/kitchen.jpg');
+  background-size: cover;
+  border: 3px solid black;
+  border-radius: 0 0 30px 30px;
+  display: inline-block;
+  text-align: end;
+  position: relative;
+}
+
+
+

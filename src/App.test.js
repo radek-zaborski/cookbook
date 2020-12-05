@@ -1,7 +1,9 @@
-import { render } from '@testing-library/react';
 import App from './App';
+import{shallow} from 'enzyme';
 
-test('renders learn react link', () => {
-  render(<App />);
- 
+describe('render component',()=>{
+  it('render without crash',()=>{
+    const wrapper = shallow(<App/>);
+    expect(wrapper).toBeTruthy();
+  });
 });
