@@ -12,7 +12,7 @@ class Soups extends React.Component {
   render(){
     const {categorySoup} = this.props;
     const soups = categorySoup[0].products;
-    console.log('tutaj',soups);
+  
     return(
       <div className={styles.component}>
         {soups.map(soup=>(
