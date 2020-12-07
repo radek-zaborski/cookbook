@@ -6,7 +6,7 @@ const categoryRecipes = [
       {
         id: '1',
         title:'pomidorowa',
-        image: 'https://s3.przepisy.pl/przepisy3ii/img/variants/767x0/zupa-pomidorowa.jpg',
+        image: 'https://pixabay.com/pl/photos/zupa-pomidor-zdrowe-domowej-roboty-1429793/',
         description: 'Pomidorowa z wczorajszego rosołu',
         localAdress:'pomidorowa',
         recipe: {
@@ -20,7 +20,7 @@ const categoryRecipes = [
       {
         id: '2',
         title:'rosół',
-        image: 'https://cdn.aniagotuje.com/pictures/articles/2020/01/1968771-v-1500x1500.jpg',
+        image: 'https://cdn.pixabay.com/photo/2014/12/09/17/57/soup-562163__340.jpg',
         description: 'niedzielna zupa jaką jest rosół',
         localAdress:'123',
         recipe: {
@@ -34,7 +34,7 @@ const categoryRecipes = [
       {
         id: '3',
         title:'zupa 3',
-        image: '',
+        image: 'https://cdn.pixabay.com/photo/2018/08/31/19/13/pumpkin-soup-3645375__340.jpg',
         description: 'zdjecie potrawy',
         localAdress:'432234',
         recipe: {
