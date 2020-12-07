@@ -12,14 +12,14 @@ const mapStateToProps = (state, props) =>{
     }
   
   }
-  console.log(allDishes);
-  console.log(id);
+  
  
   const findProduct = allDishes.filter(item => item.localAdress === id);
-  console.log(findProduct);
+  const product = {...findProduct[0]};
+  console.log('sprawdzenie w container',product);
   return {
-    product: findProduct,
     
+    product: product,
 
   };
 };

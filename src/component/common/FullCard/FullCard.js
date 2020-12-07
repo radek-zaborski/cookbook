@@ -7,13 +7,17 @@ class FullCard extends React.Component {
   static propTypes = {
     product: PropTypes.any,
     title: PropTypes.string,
+    image: PropTypes.string,
   }
   render(){
-    const {title} = this.props.product[0];
-    console.log('tutaj',this.props);
+    
+    const {title, image} = this.props.product;
+    
+    console.log('sprawdzenie this props', this.props);
     return(
       <div className={styles.component}>
-        {title}
+        <h2>{title}</h2>
+        <img src={image} alt=''/>
       </div>
     );
   }
