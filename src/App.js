@@ -8,8 +8,9 @@ function App() {
     <BrowserRouter>
       <div className={styles.component}>
         <MainLayout>
+          
           <Route path="/soups" exact component={Soups}/> 
-          <Route path="/:id" exact component={FullCard}/> 
+          <Route path='/singleProduct/:id' exact component={FullCard}/> 
         </MainLayout>
       </div>
     </BrowserRouter>
