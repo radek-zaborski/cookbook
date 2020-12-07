@@ -13,10 +13,10 @@ class FullCard extends React.Component {
     
     const {title, image} = this.props.product;
     
-    console.log('sprawdzenie this props', this.props);
+   
     return(
       <div className={styles.component}>
-        <h2>{title}</h2>
+        <h2>{title}</h2>git 
         <img src={image} alt=''/>
       </div>
     );
