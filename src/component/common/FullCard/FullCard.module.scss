@@ -1,11 +1,11 @@
 @import '../../../styles/global.scss';
 
-.component{
-  width: 70%;
+article {
+  width: 60%;
+  max-width: 500px;
   height: auto;
-  margin: 0 auto;
-  margin-top: 15px;
-  padding: 15px 0;
+  margin: 15px auto;
+  padding: 5px 0 35px 0;
   text-align: center;
   background-color: $light-bronze;
   border-radius: 25px;
@@ -15,5 +15,19 @@
     width: 60%;
     border-radius: 60px 20px;
     box-shadow: 3px 3px 12px 4px $black;
+  }
+
+  ul{
+    text-align: center;
+    padding-left: 10%;
+    width: 80%;
+    li{
+      list-style: square;
+      text-align: left;
+    }
+  }
+
+  h5 {
+    margin-bottom: 50px;
   }
 }

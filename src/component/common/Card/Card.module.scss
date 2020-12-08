@@ -4,7 +4,8 @@
   width: 30%;
   height: auto;
   margin-top: 20px;
-  border: 1px black solid;
+  background-color: $very-light-bronze;
+  border-radius: 30px;
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -14,8 +15,9 @@
   }
   
   img {
-    height: 180px;
-    width: auto;
+    
+    width: 80%;
+    border-radius: 20px;
     margin: 0 auto;
   }
   

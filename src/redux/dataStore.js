@@ -6,7 +6,7 @@ const categoryRecipes = [
       {
         id: '1',
         title:'pomidorowa',
-        image: 'https://pixabay.com/pl/photos/zupa-pomidor-zdrowe-domowej-roboty-1429793/',
+        image: 'https://cdn.pixabay.com/photo/2016/06/01/21/40/soup-1429793_960_720.jpg',
         description: 'zupa 1',
         localAdress:'235543',
         recipe: {
