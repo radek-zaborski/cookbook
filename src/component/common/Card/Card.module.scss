@@ -1,4 +1,4 @@
-@import '../../../styles//global.scss';
+@import '../../../styles/global.scss';
 
 .component {
   width: 30%;
@@ -23,7 +23,7 @@
   }
   
   .link{
-    
+   
     width: 50%;
     padding: 4px 16px;
     height: auto;
@@ -32,3 +32,13 @@
     
   }
 }
+
+@media only screen and (max-width: 560px){
+
+  .component {
+    width: 80%;
+    margin: 10px auto;
+    
+  }
+}
+

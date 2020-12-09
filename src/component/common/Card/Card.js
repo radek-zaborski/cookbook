@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Card.module.scss';
 import propTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import clsx from 'clsx';
 
 class Card extends React.Component {
 
@@ -22,7 +23,7 @@ class Card extends React.Component {
         <img src={image} alt={description}/>
         <h3>{description}</h3>
         <NavLink to={'singleProduct/' +localAdress} className={styles.link} >Zobacz przepis</NavLink>
-        <button className={styles.link} onClick=''>Dodaj produkty do listy zakupów</button>
+        <button className={ clsx(styles.link, styles.addToListButton)} onClick=''>Dodaj produkty do listy zakupów</button>
       </div>
     );
   }

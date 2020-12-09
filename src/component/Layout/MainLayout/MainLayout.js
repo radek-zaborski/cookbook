@@ -13,6 +13,7 @@ class MainLayout extends React.Component{
       <div className={styles.component}>
         <Header/>
         {children}
+        
       </div>
     );
   }

@@ -6,8 +6,8 @@ import FullCard from './component/common/FullCard/FullCardContainer';
 import Home from './component/views/Home/Home';
 function App() {
   return (
-    <BrowserRouter>
-      <div className={styles.component}>
+    <BrowserRouter className={styles.component}>
+      <div>
         <MainLayout>
           <Route path="/" exact component={Home}/>
           <Route path="/soups" exact component={Soups}/> 
