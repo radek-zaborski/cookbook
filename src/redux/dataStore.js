@@ -49,7 +49,7 @@ const categoryRecipes = [
   },
   {
     title: 'Dania główne',
-    adress: '/dinner',
+    adress: '/mainCourse',
     products:[
       {
         id: '4',

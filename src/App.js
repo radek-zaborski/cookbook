@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Soups from './component/views/Soups/SoupsContainer';
 import FullCard from './component/common/FullCard/FullCardContainer';
 import Home from './component/views/Home/Home';
+import MainCourse from './component/views/MainCourse/MainCourseContainer';
 function App() {
   return (
     <BrowserRouter className={styles.component}>
@@ -11,7 +12,9 @@ function App() {
         <MainLayout>
           <Route path="/" exact component={Home}/>
           <Route path="/soups" exact component={Soups}/> 
-          <Route path='/singleProduct/:id' exact component={FullCard}/> 
+          <Route path="/mainCourse" exact component={MainCourse}/>
+          <Route path="/singleProduct/:id" exact component={FullCard}/> 
+
         </MainLayout>
       </div>
     </BrowserRouter>

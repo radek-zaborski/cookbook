@@ -20,7 +20,7 @@ class Card extends React.Component {
     return(
       <div className={styles.component}>
         <h3>{title}</h3>
-        <img src={image} alt={description}/>
+        <img src={image} alt='zdjecie potrawy'/>
         <h3>{description}</h3>
         <NavLink to={'singleProduct/' +localAdress} className={styles.link} >Zobacz przepis</NavLink>
         <button className={ clsx(styles.link, styles.addToListButton)} onClick=''>Dodaj produkty do listy zakupów</button>
