@@ -79,7 +79,7 @@ const categoryRecipes = [
             'mięso','warzywa','przyprawy',
           ],
           time: '35 minut',
-          steps:'wrzucić, upiec, podać',
+          steps:'przepis dla kurczaja',
         },
       },
       {
@@ -93,7 +93,7 @@ const categoryRecipes = [
             'gulasz','wołowy',
           ],
           time: 'x minut',
-          steps:'zamówić',
+          steps:'przepis dla gulaszu',
         },
       },
     ],
@@ -101,20 +101,20 @@ const categoryRecipes = [
 
   {
     title: 'Desery',
-    adress: '/deser',
+    adress: '/desserts',
     products:[
       {
         id: '7',
         title:'lody',
         image: 'https://www.glamour.pl/uploads/media/default/0003/81/wymyslono-lody-ktore-sa-lekarstwem-na-kaca_1.jpeg',
-        description: 'lody kupione',
+        description: 'lody',
         localAdress:'45234',
         recipe: {
           ingredients: [
-            'sklep ','$$',
+            'produkty ','potrzebne', 'do lodów',
           ],
           time: '15 minut',
-          steps:'iść kupić',
+          steps:'przepis na lody',
         },
       },
       {
@@ -125,24 +125,10 @@ const categoryRecipes = [
         localAdress:'154323',
         recipe: {
           ingredients: [
-            'telefon','wolny weekend',
+            'potrzebne','składniki', 'do ciasta',
           ],
           time: '35 minut',
-          steps:'zadzwonić do mamy/babci/cioci* - niepotrzebne skreślić, spytać czy można przyjść, zawsze któraś ma jakieś ciasto',
-        },
-      },
-      {
-        id: '9',
-        title:'nie ma',
-        image: '',
-        description: 'dieta',
-        localAdress:'234423',
-        recipe: {
-          ingredients: [
-            'ile','można','jeść', 'słodkiego',
-          ],
-          time: '0 minut',
-          steps:'idź do innej kategorii',
+          steps:'przepis na ciasto',
         },
       },
     ],
@@ -159,10 +145,10 @@ const categoryRecipes = [
         localAdress:'23423432423',
         recipe: {
           ingredients: [
-            'paczka chipsów ',
+            'produkty','potrzebne','do przygotowania chipsów',
           ],
-          time: '0 minut',
-          steps:'otworzyć i zjeść',
+          time: '30 minut',
+          steps:'przepis na chipsy',
         },
       },
       {
@@ -173,7 +159,7 @@ const categoryRecipes = [
         localAdress:'1211113',
         recipe: {
           ingredients: [
-            'paczka paluszek',
+            'paczka paluszków','gotowy produkt',
           ],
           time: '0 minut',
           steps:'podać',
@@ -187,13 +173,13 @@ const categoryRecipes = [
     products:[
       {
         id: '13',
-        title:'serio?',
+        title:'sałatka',
         image: '',
         description: 'sałata',
         localAdress:'645456',
         recipe: {
           ingredients: [
-            'sałata ','przyprawy',
+            'produkty','do przygotowania sałatki','przyprawy',
           ],
           time: '15 minut',
           steps:'pokroić, zamieszać, przyprawić',

@@ -1,21 +1,20 @@
 import React from 'react';
-import styles from './MainCourse.module.scss';
-import Card from '../../common/Card/Card';
+import styles from './Snacks.module.scss';
 import PropTypes from 'prop-types';
+import Card from '../../common/Card/Card';
 
-class MainCourse extends React.Component {
+class Snacks extends React.Component {
 
   static propTypes = {
-
     dishes: PropTypes.array,
     products: PropTypes.array,
   }
-
   render(){
-    const {products} = this.props.dishes[1];
+    const {products} = this.props.dishes[3];
+    console.log(products);
     return(
       <div className={styles.component}>
-        {products.map(item =>(
+        {products.map(item => (
           <Card className={styles.card} key={item.id} {...item}/>
         ))}
       </div>
@@ -23,4 +22,4 @@ class MainCourse extends React.Component {
   }
 }
 
-export default MainCourse;
+export default Snacks;
