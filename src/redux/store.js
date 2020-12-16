@@ -1,16 +1,17 @@
 import {combineReducers, createStore} from 'redux';
 
 import initialStoreData from './dataStore';
+import  shoppingsListreducer  from './productsRedux';
 
 // define initial state and shallow-merge initial data
 const initialState = {
   categoryRecipes: initialStoreData.categoryRecipes,
-  shoppingList: initialStoreData.shoppingList,
+ 
 };
 
 // define reducers
 const reducers = {
- 
+  product: shoppingsListreducer,
 };
 
 // add blank reducers for initial state properties without reducers

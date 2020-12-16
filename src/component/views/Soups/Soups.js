@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Soups.module.scss';
 import PropTypes from 'prop-types';
-import Card from '../../common/Card/Card';
+import {Card} from '../../common/Card/Card';
 class Soups extends React.Component {
 
   static propTypes = {

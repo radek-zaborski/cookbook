@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './MainCourse.module.scss';
-import Card from '../../common/Card/Card';
+import {Card} from '../../common/Card/Card';
 import PropTypes from 'prop-types';
 
 class MainCourse extends React.Component {

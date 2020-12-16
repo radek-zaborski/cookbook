@@ -189,14 +189,13 @@ const categoryRecipes = [
   },
 ];
 
-const shoppingList = {
-  title: 'Lista zakupów',
-  adress: '/shopList',
+const product = {
+  
 };
 
 
 const initialStoreData = {
-  shoppingList: {...shoppingList},
+  shoppingList: {product},
   categoryRecipes: [...categoryRecipes],
   
 };

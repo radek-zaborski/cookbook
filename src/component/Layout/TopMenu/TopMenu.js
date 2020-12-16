@@ -12,6 +12,7 @@ class TopMenu extends React.Component {
 
   render(){
     const {categoryTitle} = this.props;
+    console.log(this.props);
     return(
       <div className={styles.component}>
         {categoryTitle.map((category) => (
@@ -19,7 +20,7 @@ class TopMenu extends React.Component {
         ))}
       
         <NavLink className={styles.link} to="/shopList" exact activeClassName={styles.active}>Lista Zakupów</NavLink>
-         
+          *
       </div>
     );
   }

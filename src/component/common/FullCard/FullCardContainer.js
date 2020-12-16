@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import FullCard from './FullCard';
-import {categoryRecipes} from '../../../redux/dataStore';
+
 
 const mapStateToProps = (state, props) =>{
   const id = props.match.params.id;
