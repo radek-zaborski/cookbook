@@ -190,12 +190,12 @@ const categoryRecipes = [
 ];
 
 const product = {
-  
+  product: [],
 };
 
 
 const initialStoreData = {
-  shoppingList: {product},
+  shoppingList: {...product},
   categoryRecipes: [...categoryRecipes],
   
 };

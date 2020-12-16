@@ -10,8 +10,12 @@ class Home extends React.Component {
         Witaj :)<br/><br/>
         Aktualnie aplikacja jest w trakcie tworzenia,<br/>
         lecz już teraz możesz śledzić zmiany na stronie.<br/>
-        Aktualnie zostały stworzone wszystkie zakładki z menu<br/>
-         i trwają pracę nad listą zakupów oraz dodawaniem produktów do listy.<br/>
+        Aktualnie został zaimplementowany React Redux.<br/>
+        Przyciski "dodaj produkty do listy zakupów"<br/>
+        dla każdej potrawy są aktywne.<br/><br/>
+        Zakładka "Lista Zakupów" została stworzona <br/>
+        i pobiera wszystkie składniki, wcześniej wybranych produktów.<br/>
+        Następnym krokiem będzie stylizacja "listy zakupów"<br/>
         W ostateczności zostanie stworzony system logowania,<br/>
         w którym będzie można przechowywać swoje przepisy.<br/>
         <img src='https://cdn.pixabay.com/photo/2019/02/20/15/21/underconstruction-4009361_960_720.jpg' alt=''/>

@@ -8,6 +8,7 @@ import MainCourse from './component/views/MainCourse/MainCourseContainer';
 import Desserts from './component/views/desserts/DessertsContainer';
 import Snacks from './component/views/snacks/SnacksContainer';
 import Salads from './component/views/salads/SaladsComponent';
+import shoppingList from './component/views/ShoppingList/ShoppingListContainer';
 function App() {
   return (
     <BrowserRouter className={styles.component}>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/desserts" exact component={Desserts}/>
           <Route path="/snacks" exact component={Snacks}/>
           <Route path="/salads" exact component={Salads}/>
+          <Route path="/shoppingList" exact component={shoppingList}/>
           <Route path="/singleProduct/:id" exact component={FullCard}/> 
 
         </MainLayout>

@@ -23,7 +23,7 @@ class Component extends React.Component {
   addToList =() => {
     
     this.props.addProduct();
-  
+    alert('dodano produkty do listy zakupów');
   }
 
   render(){
@@ -41,7 +41,7 @@ class Component extends React.Component {
 }
 
 const mapDistpatchToProps = (dispatch, product) => ({
-  addProduct: () => dispatch(addProduct(product.recipe.ingredients)),
+  addProduct: () => dispatch(addProduct(product)),
 });
 const Container = connect(null, mapDistpatchToProps)(Component);
 export {

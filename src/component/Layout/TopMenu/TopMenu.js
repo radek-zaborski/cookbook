@@ -19,7 +19,7 @@ class TopMenu extends React.Component {
           <ButtonTopMenu key={category.title} title={category.title} adress={category.adress}/>
         ))}
       
-        <NavLink className={styles.link} to="/shopList" exact activeClassName={styles.active}>Lista Zakupów</NavLink>
+        <NavLink className={styles.link} to="/shoppingList" exact activeClassName={styles.active}>Lista Zakupów</NavLink>
           *
       </div>
     );
