@@ -21,7 +21,8 @@ class TopMenu extends React.Component {
         ))}
       
         <NavLink className={styles.link} to="/shoppingList" exact activeClassName={styles.active}>Lista Zakupów: {product.length}</NavLink>
-          *
+        <NavLink className={styles.link} to="/newRecipe" exact activeClassName={styles.active}>Dodaj przepis</NavLink>
+
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Snacks.module.scss';
 import PropTypes from 'prop-types';
-import {Card} from '../../common/Card/Card';
+import Card from '../../common/Card/CardContainer';
 
 class Snacks extends React.Component {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Salads.module.scss';
-import {Card} from '../../common/Card/Card';
+import Card from '../../common/Card/CardContainer';
 import PropTypes from 'prop-types';
 
 class Salads extends React.Component {

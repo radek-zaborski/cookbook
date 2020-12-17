@@ -17,8 +17,6 @@ class ShoppingList extends React.Component {
     const {products} = this.props;
     const {product} = products;
     
-
-    console.log(product);
     return(
       <main className={styles.component}>
         <h1>Lista Zakupów:</h1>
@@ -29,7 +27,6 @@ class ShoppingList extends React.Component {
             ))}</ul>
           </ul>
         ))}
-      
       </main>
     );
   }

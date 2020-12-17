@@ -3,9 +3,8 @@ import styles from './Card.module.scss';
 import propTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
-import { connect } from 'react-redux';
-import {addProduct} from '../../../redux/productsRedux';
-class Component extends React.Component {
+
+class Card extends React.Component {
 
   static propTypes = {
     props: propTypes.object,
@@ -40,11 +39,4 @@ class Component extends React.Component {
   }
 }
 
-const mapDistpatchToProps = (dispatch, product) => ({
-  addProduct: () => dispatch(addProduct(product)),
-});
-const Container = connect(null, mapDistpatchToProps)(Component);
-export {
-  Container as Card,
-  Component as CardComponent,
-};
+export default Card;
