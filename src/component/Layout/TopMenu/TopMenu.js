@@ -7,19 +7,20 @@ class TopMenu extends React.Component {
 
   static propTypes = {
     categoryTitle: PropTypes.array,
-
+    shoppingList: PropTypes.array,
+    product:  PropTypes.array,
   }
 
   render(){
-    const {categoryTitle} = this.props;
-    console.log(this.props);
+    const {categoryTitle, shoppingList} = this.props;
+    const {product} = shoppingList;
     return(
       <div className={styles.component}>
         {categoryTitle.map((category) => (
           <ButtonTopMenu key={category.title} title={category.title} adress={category.adress}/>
         ))}
       
-        <NavLink className={styles.link} to="/shoppingList" exact activeClassName={styles.active}>Lista Zakupów</NavLink>
+        <NavLink className={styles.link} to="/shoppingList" exact activeClassName={styles.active}>Lista Zakupów: {product.length}</NavLink>
           *
       </div>
     );
