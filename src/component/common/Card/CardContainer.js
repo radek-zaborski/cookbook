@@ -1,8 +1,8 @@
 import {connect} from 'react-redux';
 import Card from './Card';
-import {addProduct} from '../../../redux/productsRedux';
+import {addForShoppingList} from '../../../redux/productsRedux';
 
-const mapDistpatchToProps = (dispatch, product) => ({
-  addProduct: () => dispatch(addProduct(product)),
+const mapDistpatchToProps = (dispatch, shoppingList) => ({
+  addForShoppingList: () => dispatch(addForShoppingList(shoppingList)),
 });
 export default connect(null, mapDistpatchToProps)(Card);

@@ -1,0 +1,22 @@
+@import '../../../styles/global.scss';
+
+.component {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 1px black solid;
+  text-align: center;
+  
+  .textArea {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px $bronze solid;
+    background-color: $very-light-bronze;
+    padding: 0 10px;
+    font-size: 30px;
+    label {
+      padding: 0 10px;
+      
+    }
+  }
+}

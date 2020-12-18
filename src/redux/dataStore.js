@@ -189,13 +189,13 @@ const categoryRecipes = [
   },
 ];
 
-const product = {
+const shoppingList = {
   product: [],
 };
 
 
 const initialStoreData = {
-  shoppingList: {...product},
+  shoppingList: {...shoppingList},
   categoryRecipes: [...categoryRecipes],
   
 };

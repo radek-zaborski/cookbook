@@ -12,7 +12,7 @@ class Card extends React.Component {
     image: propTypes.string,
     description: propTypes.string,
     localAdress: propTypes.string,
-    addProduct: propTypes.func,
+    addForShoppingList: propTypes.func,
     recipe: propTypes.object,
     ingredients: propTypes.array,
     addToList:propTypes.func,
@@ -21,7 +21,7 @@ class Card extends React.Component {
   
   addToList =() => {
     
-    this.props.addProduct();
+    this.props.addForShoppingList();
     alert('dodano produkty do listy zakupów');
   }
 

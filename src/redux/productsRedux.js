@@ -1,10 +1,10 @@
 
-const ADD_PRODUCT = 'ADD_PRODUCT';
-export const addProduct = payload =>({ payload, type: ADD_PRODUCT});
+const ADD_FOR_SHOPPING_LIST = 'ADD_FOR_SHOPPING_LIST';
+export const addForShoppingList = payload =>({ payload, type: ADD_FOR_SHOPPING_LIST});
 
 export default function reducer(state =[], action) {
   switch (action.type){
-    case ADD_PRODUCT: {
+    case ADD_FOR_SHOPPING_LIST: {
       return[
         ...state,
         action.payload,

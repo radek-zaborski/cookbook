@@ -21,7 +21,7 @@ class ShoppingList extends React.Component {
       <main className={styles.component}>
         <h1>Lista Zakupów:</h1>
         {product.map(item=>(
-          <ul key={item.id}><i><h3><u>produkty dla przepisu: <br/>{item.title}</u></h3></i>
+          <ul key={item.id}><i><u>produkty dla przepisu: <br/><h3>{item.title}</h3></u></i>
             <ul>{item.recipe.ingredients.map(product =>(
               <li key={product.id}>{product} <input type='checkbox' key={product.id} className={styles.checkbox} id={product.id}></input><br/></li>
             ))}</ul>
