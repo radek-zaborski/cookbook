@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './AddRecipe.module.scss';
 // import PropTypes from 'prop-styles';
-import TextField from '@material-ui/core/TextField';
 
 class AddRecipe extends React.Component {
 
@@ -48,40 +47,31 @@ class AddRecipe extends React.Component {
     console.log(this.state);
     return(
       <main className={styles.component} noValidate autoComplete='off'>
-        
-        <TextField
-          className={styles.textArea}
-          id="title"
-          label="wpisz tytuł"
-          multiline
-          rows={2}
-          onChange={this.handleChange}
-        /><br/><br/>
-        <TextField
-          className={styles.textArea}
-          id="ingredients"
-          label="Wpisz produkty oddzielając przecinkiem (,)"
-          multiline
-          rows={4}
-          onChange={this.handleChange}
-        /><br/><br/>
-        <TextField
-          className={styles.textArea}
-          id="time"
-          label="podaj orientacyjny czas przygotowania"
-          multiline
-          rows={3}
-          onChange={this.handleChange}
-        /><br/><br/>
-        <TextField
-          className={styles.textArea}
-          id="steps"
-          label="wpisz czynności wykonywania potrawy"
-          multiline
-          rows={4}
-          font-size = {30}
-          onChange={this.handleChange}
-        /><br/><br/>
+
+        <label>Wprowadź nazwę potrawy<br/>
+          <textarea type='text' className={styles.title} id='title' onChange={this.handleChange} ></textarea>
+        </label><br/>
+
+        <label>Wybierz kategorię<br/>
+          <select name='category' className={styles.select}>
+            <option value='Zupy'>Zupy</option>
+            <option value='Dania główne'>Dania główne</option>
+            <option value='Desery'>Desery</option>
+            <option value='Przekąski'>Przekąski</option>
+            <option value='Sałatki'>Sałatki</option>
+          </select>
+        </label><br/>
+        <label>Wprowadź składniki oddzielając każdy składnik przecinkiem (,)<br/>
+          <textarea type='textarea' className={styles.label} id='ingredients' onChange={this.handleChange} ></textarea>
+        </label><br/>
+
+        <label>Podaj czas przygotowania potrawy (minuty)<br/>
+          <input type='number' className={styles.number} id='time' onChange={this.handleChange} ></input>
+        </label><br/>
+
+        <label>wpisz czynności potrzebne do przygotowania potrawy<br/>
+          <textarea type='textarea' className={styles.steps} id='steps' onChange={this.handleChange} ></textarea>
+        </label><br/>
 
         <button onClick={this.handleClick}>zapisz przepis</button>
       </main>
