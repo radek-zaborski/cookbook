@@ -1,27 +1,40 @@
 import React from 'react';
 import styles from './AddRecipe.module.scss';
-// import PropTypes from 'prop-styles';
+import PropTypes from 'prop-types';
 
 class AddRecipe extends React.Component {
 
   state = {
     title: '',
+    category: '',
     ingredients: [],
     time: '',
     steps: '',
   }
+
+  static propTypes = {
+    category:PropTypes.any,
+    onBlur: PropTypes.any,
+  }
   handleChange = (event) => {
     const id = event.target.id;
     const value = event.target.value;
-
+    
     const wordsArray = value.split(',');
-
+    console.log('tu',event);
 
     if(id === 'title'){
       this.setState({
         title: value,
       });
     }
+
+    if(id === 'category'){
+      this.setState({
+        category: value,
+      });
+    }
+
     if(id === 'ingredients'){
 
       this.setState({
@@ -38,42 +51,44 @@ class AddRecipe extends React.Component {
         steps: value,
       });
     }
-    
-    
-    
   };
+
+  handleClick = () =>{
+    console.log(this.state);
+  }
   
   render(){
     console.log(this.state);
+    const {handleChange, handleClick} = this;
     return(
       <main className={styles.component} noValidate autoComplete='off'>
 
         <label>Wprowadź nazwę potrawy<br/>
-          <textarea type='text' className={styles.title} id='title' onChange={this.handleChange} ></textarea>
+          <textarea type='text' className={styles.title} id='title' onChange={handleChange} ></textarea>
         </label><br/>
 
         <label>Wybierz kategorię<br/>
-          <select name='category' className={styles.select}>
-            <option value='Zupy'>Zupy</option>
-            <option value='Dania główne'>Dania główne</option>
-            <option value='Desery'>Desery</option>
-            <option value='Przekąski'>Przekąski</option>
-            <option value='Sałatki'>Sałatki</option>
+          <select  onBlur={handleChange} name='category' id='category' className={styles.select}>
+            <option  id='sel1' value='Zupy'>Zupy</option>
+            <option  id='sel2' value='Dania główne'>Dania główne</option>
+            <option id='sel3' value='Desery'>Desery</option>
+            <option id='sel4' value='Przekąski'>Przekąski</option>
+            <option  id='sel5' value='Sałatki'>Sałatki</option>
           </select>
         </label><br/>
         <label>Wprowadź składniki oddzielając każdy składnik przecinkiem (,)<br/>
-          <textarea type='textarea' className={styles.label} id='ingredients' onChange={this.handleChange} ></textarea>
+          <textarea type='textarea' className={styles.label} id='ingredients' onChange={handleChange} ></textarea>
         </label><br/>
 
         <label>Podaj czas przygotowania potrawy (minuty)<br/>
-          <input type='number' className={styles.number} id='time' onChange={this.handleChange} ></input>
+          <input type='number' className={styles.number} id='time' onChange={handleChange} ></input>
         </label><br/>
 
         <label>wpisz czynności potrzebne do przygotowania potrawy<br/>
-          <textarea type='textarea' className={styles.steps} id='steps' onChange={this.handleChange} ></textarea>
+          <textarea type='textarea' className={styles.steps} id='steps' onChange={handleChange} ></textarea>
         </label><br/>
 
-        <button onClick={this.handleClick}>zapisz przepis</button>
+        <button onClick={handleClick}>zapisz przepis</button>
       </main>
     );
   }
